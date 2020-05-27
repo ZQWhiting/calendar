@@ -11,6 +11,8 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  height: 80px;
+  line-height: 1.2;
 }
 
 .jumbotron {
@@ -21,7 +23,7 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
+.task-box{
   white-space: pre-wrap;
 }
 
@@ -34,6 +36,7 @@ textarea{
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  margin-top: 1px;
 }
 
 .hour {
@@ -68,4 +71,5 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  color:black;
 }
