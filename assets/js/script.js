@@ -1,7 +1,7 @@
 // Header Date
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
-// Start Time Audit
+// Time Audit Start
 // Time Audit Function
 var timeAudit = function (taskEl) {
     var hour = taskEl.attr("id");
@@ -33,9 +33,9 @@ setInterval(function () {
         })
     }
 }, (1000 * 60)) // check every minute
-// End Time Audit
+// Time Audit End
 
-// Start Save and Load
+// Save and Load Start
 // Save (on save button click)
 $("i").on("click", function () {
     var taskId = $(this) // get task id
@@ -55,4 +55,4 @@ $(".task-box").each(function () {
     var savedTask = localStorage.getItem(taskId); // get saved task
     $(this).val(savedTask) // load saved task
 })
-// End Save and Load
+// Save and Load End
